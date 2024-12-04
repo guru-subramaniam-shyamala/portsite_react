@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h2>Have an Awesome Project Idea? Let's Discuss</h2>
-      <p>Email me at: guru030601@gmailw.com</p>
+      <p>Email me at: guru030601@gmail.com</p>
       <form>
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
