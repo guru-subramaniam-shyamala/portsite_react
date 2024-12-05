@@ -1,0 +1,126 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #1c1c1c; /* Dark background */
+    border-radius: 50px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-top: 20px; /* Moves the navbar down */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-item a:hover {
+    color: white;
+    background-color: #ff6600; /* Highlight on hover */
+  }
+  
+  .nav-item.active a {
+    background-color: #ff6600; /* Active tab color */
+    color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo-icon {
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  /* Desktop - Large screens */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 10px 30px;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+  .logo-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet - Medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0px;
+  }
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile - Small screens */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 0px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .nav-item a {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  .logo-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
