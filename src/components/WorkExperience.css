@@ -1,0 +1,141 @@
+.work-experience {
+    padding: 60px 10%; /* Add horizontal padding to utilize blank space */
+    background-color: #fff8f0; /* Light cream background */
+    text-align: center;
+  }
+  
+  .work-experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .work-experience h2 span {
+    color: #ff6600; /* Orange highlight */
+  }
+  
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Left, Center, Right */
+    gap: 30px; /* Increase gap for better spacing */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* Restrict width for better centering */
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    display: contents; /* Ensures proper alignment in the grid */
+  }
+  
+  .timeline-left {
+    text-align: center;
+    padding-right: 20px; /* Space between left content and center line */
+  }
+  
+  .timeline-right {
+    text-align: left;
+    padding-left: 20px; /* Space between right content and center line */
+  }
+  
+  .timeline-left h3,
+  .timeline-right h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .timeline-left .duration,
+  .timeline-right .description {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2; /* Improve readability */
+  }
+  
+  .timeline-right .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to three lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .timeline-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .circle {
+    width: 20px; /* Inner circle size */
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff; /* Inner circle background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensures circles are above the line */
+    position: relative;
+  }
+  
+  .circle.orange {
+    background-color: #ff6600; /* Orange */
+  }
+  
+  .circle.blue {
+    background-color: #333; /* Dark blue */
+  }
+
+  .circle::before {
+    content: "";
+    position: absolute;
+    top: -8px; /* Adjust to control spacing */
+    left: -8px;
+    width: 32px; /* Outer dotted circle size */
+    height: 32px;
+    border-radius: 50%;
+    border: 2px dashed #333; /* Dotted border */
+    background: transparent;
+    z-index: -1; /* Sends the outer circle behind the inner circle */
+  }
+  
+  .line {
+    width: 2px;
+    height: 100px; /* Adjust height to match spacing */
+    background: repeating-linear-gradient(
+      to bottom,
+      #333,
+      #333 5px,
+      transparent 5px,
+      transparent 10px
+    ); /* Dotted line effect */
+    position: absolute;
+    transform: translateY(30%); /* Adjust for perfect alignment */
+  }
+  
+  .timeline-center .circle + .line {
+    margin-top: 0; /* Remove margin to ensure line connects perfectly */
+  }
+    
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .timeline {
+      grid-template-columns: 1fr; /* Stack content vertically */
+      text-align: center;
+    }
+  
+    .timeline-left,
+    .timeline-right {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .line {
+      display: none; /* Hide lines on small screens for a cleaner layout */
+    }
+  }
+  

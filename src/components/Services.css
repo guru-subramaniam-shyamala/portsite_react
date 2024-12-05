@@ -1,0 +1,64 @@
+.services {
+    padding: 60px 30px;
+    background-color: #fff8f0; /* Light cream background */
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ff6600; /* Orange heading */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .service {
+    background-color: #fff; /* White card background */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slight shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Darker shadow on hover */
+  }
+  
+  .service-icon {
+    width: 60px; /* Adjust size of the icons */
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .service h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .service p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .service {
+      padding: 20px;
+    }
+  }
+  

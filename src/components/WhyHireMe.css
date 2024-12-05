@@ -1,0 +1,128 @@
+/* Section Container */
+.why-hire-me {
+    background-color: #ffe7cb; /* Light gray-blue background */
+    padding: 40px 20px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .why-hire-me-container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* Profile Image Section */
+  .profile-image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 200px; /* Adjust size */
+    height: auto;
+    border-radius: 100%;
+    z-index: 2; /* Ensure it's above the circles */
+    transition: transform 0.3s ease; /* Add smooth hover animation */
+  }
+  
+  .concentric-circle {
+    position: absolute;
+    width: 300px; /* Adjust size */
+    height: 300px; /* Keep it square */
+    z-index: 1;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth effect */
+  }
+  
+  /* Hover Effect */
+  .profile-image-container:hover .concentric-circle {
+    opacity: 1; /* Show on hover */
+    transform: scale(1.05); /* Slight enlargement */
+  }
+  
+  .profile-image-container:hover .profile-picture {
+    transform: scale(1.05); /* Slight enlargement */
+  }
+  
+  /* Content Section */
+  .why-hire-me-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .why-hire-me-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .why-hire-me-content h2 span {
+    color: #ff6600;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Button Styling */
+  .hire-me-button {
+    padding: 15px 30px;
+    border: 2px solid #333;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .hire-me-button:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .why-hire-me-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-image-container {
+      margin-bottom: 20px;
+    }
+  
+    .stats {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
