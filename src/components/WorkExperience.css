@@ -105,7 +105,7 @@
   
   .line {
     width: 2px;
-    height: 100px; /* Adjust height to match spacing */
+    height: 120px; /* Adjust height to match spacing */
     background: repeating-linear-gradient(
       to bottom,
       #333,

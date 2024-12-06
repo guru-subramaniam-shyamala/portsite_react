@@ -94,15 +94,15 @@ h1 span {
   align-items: center;
   justify-content: center;
   max-width: 300px;
-  padding: 20px; /* Add padding around the image */
-  transform: translateY(-40px);
+  padding: 0px; /* Add padding around the image */
+  transform: translateY(-5px);
 }
 
 .background-shape {
   position: absolute;
-  bottom: 21px;
-  width: 500px;
-  height: 250px;
+  bottom: 0px;
+  width: 600px;
+  height: 300px;
   background-color: #ffb649;
   border-radius: 300px 300px 0 0;
   z-index: 0;
@@ -111,7 +111,7 @@ h1 span {
 .profile-picture {
   width: 250px;
   height: auto;
-  bottom: -50px;
+  bottom: -10px;
   transition: transform 0.3s ease;
   z-index: 1;
 }
@@ -151,7 +151,7 @@ h1 span {
 .cta-buttons {
   display: flex;
   gap: 20px;
-  margin-top: -150px; /* Move buttons up relative to their parent */
+  margin-top: -80px; /* Move buttons up relative to their parent */
   z-index: 2; /* Ensure buttons appear above other elements */
   justify-content: center; /* Center-align the buttons */
 }
@@ -254,56 +254,92 @@ h1 span {
 }
 
 /* Mobile */
+/* Mobile */
 @media (max-width: 767px) {
   .hero {
     padding: 20px;
+    text-align: center; /* Center-align content for mobile */
   }
 
   h1 {
     font-size: 2rem;
     line-height: 1.3;
+    margin-bottom: 15px;
   }
 
   .main-content {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    text-align: center; /* Align text for smaller screens */
   }
 
-  .testimonial, .rating {
+  .testimonial,
+  .rating {
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .image-container {
-    max-width: 300px;
-    padding: 10px;
-    transform: translateY(0);
+    width: 200px;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center-align image container */
+    transform: translateY(0); /* Remove hover transformation for mobile */
   }
 
   .background-shape {
-    max-width: 400px;
-    max-height: 200px;
-    padding: 5px;
-
+    width: 220px;
+    height: 110px; /* Adjust shape size for mobile */
+    margin: 0 auto; /* Center-align background shape */
   }
 
-  .profile-picture, .decorative-image {
-    max-width: 150px;
-    max-height: 350px;
-    padding: 5px;
+  .decorative-image {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    bottom: -10px; /* Adjust position for mobile */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .profile-picture {
+    width: 150px; /* Adjust profile image size */
+    height: auto;
+    margin: 0 auto; /* Center-align profile picture */
   }
 
   .cta-buttons {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
+    margin-top: 15px; /* Add spacing above buttons */
   }
 
-  .btn-primary, .btn-secondary {
+  .btn-primary,
+  .btn-secondary {
     padding: 10px 20px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 25px; /* Round button edges for a cleaner look */
+    width: 200px; /* Ensure buttons are consistent in width */
+    text-align: center;
   }
 
+  .btn-primary {
+    background-color: #ff6600;
+    color: #fff;
+  }
+
+  .btn-secondary {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none; /* Remove hover effects for touch devices */
+  }
+  
   .hover-container:hover .top-content {
     transform: none; /* Disable greeting hover */
   }

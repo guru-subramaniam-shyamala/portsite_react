@@ -1,0 +1,143 @@
+.testimonials {
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.header h2 span {
+    color: #ff6600;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.card .role {
+    font-size: 0.9rem;
+    color: #ffcc00;
+}
+
+.card .rating {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #ffcc00;
+    margin: 10px 0;
+}
+
+.card .rating span {
+    margin-right: 5px;
+}
+
+.card .review {
+    font-size: 1rem;
+    text-align: justify;
+    color: white;
+    font-style: italic;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 2.5rem;
+    color: #ff6600;
+    z-index: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* Tablets */
+    .testimonial-grid {
+        gap: 50px;
+    }
+
+    .card {
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .card .review {
+        font-size: 0.9rem;
+    }
+
+    .quote-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .header h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+        margin: 20px 0;
+    }
+
+    .card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .card .review {
+        font-size: 0.85rem;
+    }
+
+    .quote-icon {
+        font-size: 1.5rem;
+    }
+}

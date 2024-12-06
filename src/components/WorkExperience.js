@@ -17,7 +17,7 @@ const WorkExperience = () => {
     },
     {
       company: "Free Lancer",
-      duration: "March 2024 - Presnt",
+      duration: "March 2023 - Presnt",
       role: "Cloud Architect",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales.",
     },

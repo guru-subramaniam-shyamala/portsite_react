@@ -1,0 +1,155 @@
+/* General Portfolio Styling */
+.portfolio {
+  padding: 50px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  text-align: center;
+  color: rgb(23, 23, 23);
+}
+
+.portfolioHeader {
+  margin-bottom: 40px;
+}
+
+.portfolioHeader h2 {
+  font-size: 2.5rem;
+  color: #ff6600;
+}
+
+.portfolioHeader h2 span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #141414;
+  opacity: 0.9;
+}
+
+.portfolioHeader p {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.projectGrid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  position: relative;
+  width: 320px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.projectCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover img {
+  transform: scale(1.05);
+}
+
+.projectCard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+  box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+.projectCard h3 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.projectCard .tooltip {
+  color: #ffcc99;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.projectTitle {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #141414;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cta {
+  margin-top: 40px;
+}
+
+.ctaButton {
+  padding: 12px 24px;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #e65500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolioHeader h2 {
+    font-size: 1.8rem;
+  }
+
+  .portfolioHeader h2 span {
+    font-size: 2.2rem;
+  }
+
+  .portfolioHeader p {
+    font-size: 1rem;
+  }
+
+  .projectCard {
+    width: 100%;
+    height: 250px;
+  }
+
+  .projectCard img {
+    height: 160px;
+  }
+
+  .projectTitle {
+    font-size: 0.9rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

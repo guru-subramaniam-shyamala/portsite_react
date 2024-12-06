@@ -1,0 +1,187 @@
+/* General styles for the contact section */
+.contact {
+    padding: 50px 20px;
+    background-color: #ffecd2;
+    text-align: center;
+}
+
+.contactHeader h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contactHeader h2 span {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.emailInputWrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid #111111;
+    border-radius: 50px;
+    padding: 0 10px;
+    background-color: white;
+    width: 800px; /* Default for large screens */
+    height: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+.emailIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 30px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.emailInputWrapper input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.emailInputWrapper input::placeholder {
+    color: #888;
+    font-size: 1rem;
+}
+
+.sendButton {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+.sendButton:hover {
+    background-color: #e55a00;
+}
+
+/* Achievements section styles */
+.achievements {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Adjust layout for smaller screens */
+}
+
+.achievement {
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.achievement span {
+    font-weight: bold;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+    .emailInputWrapper {
+        width: 600px;
+        height: 60px;
+    }
+
+    .emailIcon {
+        font-size: 1.3rem;
+        width: 40px;
+        height: 30px;
+    }
+
+    .sendButton {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .contactHeader h2 {
+        font-size: 1.8rem;
+    }
+
+    .emailInputWrapper {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        gap: 15px;
+    }
+
+    .emailIcon {
+        font-size: 1.2rem;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .emailInputWrapper input {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .sendButton {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+        margin-top: 10px;
+    }
+
+    .achievements {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Extra Small Devices (e.g., phones) */
+@media (max-width: 480px) {
+    .contactHeader h2 {
+        font-size: 1.5rem;
+    }
+
+    .emailInputWrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .emailIcon {
+        font-size: 1rem;
+        width: 35px;
+        height: 35px;
+    }
+
+    .sendButton {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .achievements {
+        gap: 10px;
+    }
+}

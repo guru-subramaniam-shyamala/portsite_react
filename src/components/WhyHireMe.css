@@ -23,18 +23,18 @@
     align-items: center;
   }
   
-  .profile-picture {
-    width: 200px; /* Adjust size */
+  .profile {
+    width: 250px;
     height: auto;
-    border-radius: 100%;
+    /* border-radius: 50%; */
     z-index: 2; /* Ensure it's above the circles */
     transition: transform 0.3s ease; /* Add smooth hover animation */
   }
   
   .concentric-circle {
     position: absolute;
-    width: 300px; /* Adjust size */
-    height: 300px; /* Keep it square */
+    width: 400px; /* Adjust size */
+    height: 400px; /* Keep it square */
     z-index: 1;
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth effect */
@@ -46,7 +46,7 @@
     transform: scale(1.05); /* Slight enlargement */
   }
   
-  .profile-image-container:hover .profile-picture {
+  .profile-image-container:hover .profile {
     transform: scale(1.05); /* Slight enlargement */
   }
   

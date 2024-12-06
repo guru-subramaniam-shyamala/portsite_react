@@ -15,9 +15,9 @@ const WhyHireMe = () => {
             alt="Concentric Circle"
           />
           <img
-            className="profile-picture"
+            className="profile"
             src={pic01}
-            alt="Profile Picture"/>
+            alt="Profile"/>
         </div>
 
         {/* Content Section */}
@@ -26,16 +26,15 @@ const WhyHireMe = () => {
             Why <span>Hire me?</span>
           </h2>
           <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
-            vulputate, bibendum sodales.
+          I'm an exceptional Cloud Engineer, certified in AWS, GCP, and Terraform, with a proven track record of delivering scalable, secure, and cost-effective cloud solutions that stand out in the industry.
           </p>
           <div className="stats">
             <div className="stat-item">
-              <h3>10+</h3>
-              <p>Project Completed</p>
+              <h3>10</h3>
+              <p>Platforms Deployed</p>
             </div>
             <div className="stat-item">
-              <h3>10+</h3>
+              <h3>15+</h3>
               <p>Project Completed</p>
             </div>
           </div>
