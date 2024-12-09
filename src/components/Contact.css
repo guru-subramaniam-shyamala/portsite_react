@@ -1,7 +1,7 @@
 /* General styles for the contact section */
 .contact {
     padding: 50px 20px;
-    background-color: #ffecd2;
+    background-color: #fff7ed;
     text-align: center;
 }
 
@@ -26,13 +26,13 @@
 .emailInputWrapper {
     display: flex;
     align-items: center;
-    border: 2px solid #111111;
+    border: 2px solid #979797;
     border-radius: 50px;
     padding: 0 10px;
-    background-color: white;
+    background: none;
     width: 800px; /* Default for large screens */
     height: 70px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(23, 23, 23, 0.1);
     gap: 10px;
 }
 
@@ -42,7 +42,7 @@
     justify-content: center;
     font-size: 1.5rem;
     width: 50px;
-    height: 30px;
+    height: 50px;
     background-color: #ff6600;
     color: white;
     border-radius: 50%;
@@ -52,6 +52,7 @@
 .emailInputWrapper input {
     flex-grow: 1;
     border: none;
+    box-shadow: 0 4px 6px rgba(72, 72, 72, 0.1);
     outline: none;
     padding: 15px;
     font-size: 1rem;
@@ -78,7 +79,7 @@
 }
 
 .sendButton:hover {
-    background-color: #e55a00;
+    background-color: #933b00;
 }
 
 /* Achievements section styles */
@@ -130,7 +131,7 @@
 
     .emailInputWrapper {
         flex-direction: column;
-        width: 90%;
+        width: 80%;
         height: auto;
         gap: 15px;
     }
@@ -155,6 +156,7 @@
 
     .achievements {
         flex-direction: column;
+        align-items: center;
         gap: 15px;
     }
 }
@@ -183,5 +185,6 @@
 
     .achievements {
         gap: 10px;
+        align-items: center;
     }
 }

@@ -8,6 +8,7 @@ import Contact from "../components/Contact";
 import WhyHireMe from "../components/WhyHireMe";
 import Testimonials from "../components/Testimonials";
 import Certification from "../components/certification";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Portfolio />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   );
 };

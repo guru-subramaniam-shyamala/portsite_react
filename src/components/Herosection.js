@@ -16,7 +16,7 @@ const Herosection = () => {
         <div className="main-content">
           <div className="testimonial">
             "Guru's exceptional product design ensured our website's success. Highly recommended."
-          </div>
+          </div> 
           <div className="image-container">
             <div className="background-shape"></div>
             <img className="profile-picture" src={pic01} alt="Guru Cloud Engineer" />
