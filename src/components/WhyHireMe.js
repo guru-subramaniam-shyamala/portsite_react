@@ -1,6 +1,6 @@
 import React from "react";
 import "./WhyHireMe.css";
-import pic01 from "../assets/pic01.png"; // Import profile picture
+import pic17 from "../assets/pic17.png"; // Import profile picture
 import pic03 from "../assets/pic03.png"; // Import concentric circles
 
 const WhyHireMe = () => {
@@ -16,7 +16,7 @@ const WhyHireMe = () => {
           />
           <img
             className="profile"
-            src={pic01}
+            src={pic17}
             alt="Profile"/>
         </div>
 
