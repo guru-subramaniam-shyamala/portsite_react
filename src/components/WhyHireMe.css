@@ -24,9 +24,9 @@
   }
   
   .profile {
-    width: 250px;
+    width: 350px;
     height: auto;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     z-index: 2; /* Ensure it's above the circles */
     transition: transform 0.3s ease; /* Add smooth hover animation */
   }

@@ -9,19 +9,19 @@ const Portfolio = () => {
     {
       image: pic09,
       title: "Project 01",
-      link: "#",
+      link: "https://github.com/guru-subramaniam-shyamala/portsite_react",
       description: "A cloud migration project using AWS Lambda and Terraform.",
     },
     {
       image: pic10,
       title: "Project 02",
-      link: "#",
-      description: "An office automation system integrated with Office 365.",
+      link: "https://github.com/guru-subramaniam-shyamala/LinkedIn-Job-Automation",
+      description: "LinkedIn Job Automation using Selenium and Python.",
     },
     {
       image: image3,
       title: "Project 03",
-      link: "#",
+      link: "https://github.com/guru-subramaniam-shyamala/Cloud-Migration-of-Luxury-Hotel-Chain-Operations",
       description: "Developing scalable applications with GCP tools.",
     },
   ];
