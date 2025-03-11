@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Portfolio.module.css";
 import pic09 from "../assets/pic09.png";
-import pic10 from "../assets/pic10.png";
-import image3 from "../assets/pic09.png";
+import pic18 from "../assets/pic18.png";
+import pic19 from "../assets/pic19.png";
 
 const Portfolio = () => {
   const projects = [
@@ -13,13 +13,13 @@ const Portfolio = () => {
       description: "A cloud migration project using AWS Lambda and Terraform.",
     },
     {
-      image: pic10,
+      image: pic19,
       title: "Project 02",
       link: "https://github.com/guru-subramaniam-shyamala/LinkedIn-Job-Automation",
       description: "LinkedIn Job Automation using Selenium and Python.",
     },
     {
-      image: image3,
+      image: pic18,
       title: "Project 03",
       link: "https://github.com/guru-subramaniam-shyamala/Cloud-Migration-of-Luxury-Hotel-Chain-Operations",
       description: "Developing scalable applications with GCP tools.",
