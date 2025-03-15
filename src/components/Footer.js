@@ -4,7 +4,7 @@ import CounterNumber from './counter-number.js';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="Footer" className="footer">
       <div className="footer-content">
         <p>Copyright © 2024 Guru Subramaniam Shyamala</p>
         <p>Website Views: <CounterNumber/></p>

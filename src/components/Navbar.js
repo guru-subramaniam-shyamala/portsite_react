@@ -14,9 +14,9 @@ const Navbar = () => {
         <span className="logo-text">Guru Subramaniam Shyamala</span>
       </div>
       <ul className="nav-links">
-        <li className="nav-item"><a href="#resume">Resume</a></li>
-        <li className="nav-item"><a href="#projects">Project</a></li>
-        <li className="nav-item"><a href="#contact">Contact</a></li>
+        <li className="nav-item"><a href="https://resume-buc.s3.ca-central-1.amazonaws.com/Guru+Subramaniam+Devops+Resume.pdf">Resume</a></li>
+        <li className="nav-item"><a href="#portfolio">Project</a></li>
+        <li className="nav-item"><a href="#Footer">Contact</a></li>
       </ul>
     </nav>
   );

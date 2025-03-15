@@ -58,6 +58,7 @@
   .timeline-right .description {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Limit to three lines */
+    line-clamp: 3; /* Standard property for compatibility */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -105,7 +106,7 @@
   
   .line {
     width: 2px;
-    height: 120px; /* Adjust height to match spacing */
+    height: 130px; /* Adjust height to match spacing */
     background: repeating-linear-gradient(
       to bottom,
       #333,

@@ -30,13 +30,13 @@ const Herosection = () => {
               <span>⭐</span>
               <span>⭐</span>
             </div>
-            <p>2 Years Experience</p>
+            <p>4+ Years Experience</p>
           </div>
         </div>
       </div>
       <div className="cta-buttons">
-        <button className="btn-primary">Portfolio</button>
-        <button className="btn-secondary">Hire Me</button>
+        <a href="#portfolio" className="btn-primary">Portfolio</a>
+        <a href="#Footer" className="btn-secondary">Hire Me</a>
       </div>
     </section>
   );

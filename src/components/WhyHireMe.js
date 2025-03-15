@@ -5,7 +5,7 @@ import pic03 from "../assets/pic03.png"; // Import concentric circles
 
 const WhyHireMe = () => {
   return (
-    <section className="why-hire-me">
+    <section id="about" className="why-hire-me">
       <div className="why-hire-me-container">
         {/* Profile Image Section */}
         <div className="profile-image-container">
@@ -26,19 +26,19 @@ const WhyHireMe = () => {
             Why <span>Hire me?</span>
           </h2>
           <p className="description">
-          I'm an exceptional Cloud Engineer, certified in AWS, GCP, and Terraform, with a proven track record of delivering scalable, secure, and cost-effective cloud solutions that stand out in the industry.
+          I'm an exceptional Cloud Architect, certified in AWS, GCP, and Terraform, with a proven track record of delivering scalable, secure, and cost-effective cloud solutions that stand out in the industry.
           </p>
           <div className="stats">
             <div className="stat-item">
-              <h3>10</h3>
+              <h3>20</h3>
               <p>Platforms Deployed</p>
             </div>
             <div className="stat-item">
-              <h3>15+</h3>
+              <h3>25+</h3>
               <p>Project Completed</p>
             </div>
           </div>
-          <button className="hire-me-button">Hire me</button>
+          <a href="#Footer" className="hire-me-button">Hire Me</a>
         </div>
       </div>
     </section>
