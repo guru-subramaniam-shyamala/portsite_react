@@ -15,7 +15,7 @@ const Portfolio = () => {
     {
       image: pic19,
       title: "Project 02",
-      link: "https://github.com/guru-subramaniam-shyamala/LinkedIn-Job-Automation",
+      link: "https://github.com/guru-subramaniam-shyamala/LI_automation",
       description: "LinkedIn Job Automation using Selenium and Python.",
     },
     {
