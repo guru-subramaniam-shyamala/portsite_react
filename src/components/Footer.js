@@ -10,10 +10,10 @@ const Footer = () => {
         <p>Website Views: <CounterNumber/></p>
         <div className="footer-icons">
           <a href="https://github.com/guru-subramaniam-shyamala" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github"></i>
+            <i className="fa-brands fa-github fa-2x"></i>
           </a>
-          <a href="https://www.linkedin.com/guru-subramaniam-shyamala/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/guruss/" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-linkedin fa-2x"></i>
           </a>
         </div>
       </div>
@@ -22,4 +22,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 

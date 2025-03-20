@@ -2,6 +2,7 @@ import './App.css';
 import React from "react";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Portfolio from "./components/Portfolio";
 import AWSStaticHosting from "./pages/AWSStaticHosting";
 import TerraformMigration from "./pages/TerraformMigration";
