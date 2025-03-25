@@ -20,13 +20,13 @@ const certifications = [
   },
   {
     id: 3,
-    imgSrc: pic14,
+    imgSrc: pic15,
     title: "AWS Certified DevOps Engineer – Professional",
     url: "https://www.credly.com/badges/8c129d37-8932-4eee-ba66-9613fd2b60a8/public_url",
   },
   {
     id: 4,
-    imgSrc: pic15,
+    imgSrc: pic14,
     title: "HashiCorp Certified: Terraform Associate",
     url: "https://www.credly.com/badges/3372ec6d-5ff3-4241-9498-a670b0c42fa5/public_url",
   },
