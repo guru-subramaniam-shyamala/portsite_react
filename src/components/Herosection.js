@@ -10,12 +10,12 @@ const Herosection = () => {
         <div className="top-content">
           <div className="greeting">Hello!</div>
           <h1>
-            I'm <span>Guru</span>, <br /> Cloud Architect
+            I'm <span>Guru</span>, <br /> Cloud Engineer
           </h1>
         </div>
         <div className="main-content">
           <div className="testimonial">
-            "Guru's exceptional product design ensured our website's success. Highly recommended."
+            "Guru's exceptional architecture design ensured high availability for our website."
           </div> 
           <div className="image-container">
             <div className="background-shape"></div>
@@ -30,7 +30,7 @@ const Herosection = () => {
               <span>⭐</span>
               <span>⭐</span>
             </div>
-            <p>4+ Years Experience</p>
+            <p>1+ Years Experience</p>
           </div>
         </div>
       </div>
