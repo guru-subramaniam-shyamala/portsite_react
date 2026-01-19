@@ -30,7 +30,7 @@ const Herosection = () => {
               <span>⭐</span>
               <span>⭐</span>
             </div>
-            <p>1+ Years Experience</p>
+            <p>2+ Years Experience</p>
           </div>
         </div>
       </div>
