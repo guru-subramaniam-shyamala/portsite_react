@@ -132,9 +132,8 @@ export default function HomePage() {
 
         <section className={styles.container} id="proof">
           <SectionHeading
-            description="A quick proof strip for recruiters, hiring managers, and stakeholders who need trust signals in under ten seconds."
-            eyebrow="Selected Outcomes"
-            title="Clear signals of platform, migration, and AI delivery."
+            eyebrow="Outcomes"
+            title="Selected outcomes"
           />
           <div className={styles.proofStrip}>
             {proofStrip.map((item, index) => (
@@ -148,9 +147,8 @@ export default function HomePage() {
 
         <section className={styles.container}>
           <SectionHeading
-            description="A fast recruiter-readable summary of experience, certifications, domains, and current positioning."
-            eyebrow="Experience Snapshot"
-            title="Understand the profile in one pass."
+            eyebrow="Snapshot"
+            title="At a glance"
           />
           <div className={styles.snapshotGrid}>
             {experienceSnapshot.map((item) => (
@@ -164,9 +162,8 @@ export default function HomePage() {
 
         <section className={styles.container} id="ways-i-help">
           <SectionHeading
-            description="This section is framed around business problems and delivery impact rather than a raw tool inventory."
-            eyebrow="Ways I Can Help"
-            title="Engineering support that closes the gap between intent and shipped systems."
+            eyebrow="How I Help"
+            title="Ways I can help"
           />
           <div className={styles.waysGrid}>
             {waysToHelp.map((item) => (
@@ -180,9 +177,8 @@ export default function HomePage() {
 
         <section className={styles.container} id="services">
           <SectionHeading
-            description="Outcome-oriented offers built around platform delivery, modernization, automation, and internal engineering systems."
             eyebrow="Services"
-            title="Ways I support teams shipping modern cloud platforms."
+            title="Core services"
           />
           <div className={styles.servicesGrid}>
             {services.map((service) => (
@@ -202,9 +198,8 @@ export default function HomePage() {
         <section className={styles.container} id="case-studies">
           <div className={styles.caseStudyIntro}>
             <SectionHeading
-              description="Featured work with measurable outcomes. Sensitive implementation details stay out of the public summaries."
-              eyebrow="Case Studies"
-              title="Selected projects with internal routes instead of external repository links."
+              eyebrow="Projects"
+              title="Selected case studies"
             />
             <Link className={styles.caseStudyAnchor} href="/#contact">
               Want the deeper story? Let&apos;s talk.
@@ -221,9 +216,8 @@ export default function HomePage() {
           <div className={styles.experienceGrid}>
             <div>
               <SectionHeading
-                description="Recent roles and delivery environments that inform the current focus on cloud, platform, and forward deployed engineering."
                 eyebrow="Experience"
-                title="Recent work across cloud infrastructure, enterprise systems, and AI-enabled delivery."
+                title="Recent experience"
               />
               <div className={styles.timeline}>
                 {experience.map((entry) => (
@@ -243,7 +237,7 @@ export default function HomePage() {
             <div>
               <SectionHeading
                 eyebrow="Certifications"
-                title="Cloud and infrastructure credentials."
+                title="Credentials"
               />
               <div className={styles.certGrid}>
                 {certifications.map((cert) => (
