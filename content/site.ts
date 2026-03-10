@@ -10,7 +10,7 @@ export const siteConfig = {
   shortName: "Guru",
   role: "Cloud Engineer + Forward Deployed Engineer",
   description:
-    "Cloud engineer and forward deployed engineer building Terraform-driven platforms, AI-backed internal systems, and modernization programs across AWS, GCP, and Azure.",
+    "Guru Subramaniam Shyamala, also known as Guru, is a Cloud Engineer and Forward Deployed Engineer building Terraform-driven platforms, AI-backed internal systems, and modernization programs across AWS, GCP, and Azure.",
   linkedinUrl: "https://www.linkedin.com/in/guruss/",
   githubUrl: "https://github.com/guru-subramaniam-shyamala",
   resumeUrl:
@@ -19,12 +19,18 @@ export const siteConfig = {
     "LinkedIn is the fastest way to reach me while this site is being refreshed with a dedicated contact channel.",
   keywords: [
     "Guru Subramaniam Shyamala",
+    "Guru",
+    "Guru Subramaniam",
     "Cloud Engineer",
     "Forward Deployed Engineer",
     "Terraform Engineer",
     "AWS Engineer",
     "GCP Engineer",
-    "AI Platform Engineer"
+    "AI Platform Engineer",
+    "Guru cloud engineer",
+    "Guru Terraform engineer",
+    "Guru Subramaniam Shyamala portfolio",
+    "cloudife"
   ]
 };
 

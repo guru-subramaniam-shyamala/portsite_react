@@ -9,28 +9,42 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteConfig.name} | ${siteConfig.role}`,
+    default: `${siteConfig.name} (${siteConfig.shortName}) | Cloud Engineer`,
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
+  manifest: "/manifest.webmanifest",
   alternates: {
     canonical: "/"
   },
   keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
+  category: "technology",
+  referrer: "origin-when-cross-origin",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1
+    }
+  },
   openGraph: {
-    title: `${siteConfig.name} | ${siteConfig.role}`,
+    title: `${siteConfig.name} (${siteConfig.shortName}) | Cloud Engineer`,
     description: siteConfig.description,
-    url: "/",
+    url: siteUrl,
     siteName: siteConfig.name,
     locale: "en_US",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | ${siteConfig.role}`,
+    title: `${siteConfig.name} (${siteConfig.shortName}) | Cloud Engineer`,
     description: siteConfig.description
   },
   icons: {

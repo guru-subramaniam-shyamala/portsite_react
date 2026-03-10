@@ -22,10 +22,10 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: {
-    absolute: `${siteConfig.name} | Cloud Engineer and Forward Deployed Engineer`
+    absolute: `${siteConfig.name} (${siteConfig.shortName}) | Cloud Engineer, Terraform, AWS, GCP`
   },
   description:
-    "Portfolio for Guru Subramaniam Shyamala, a cloud engineer and forward deployed engineer delivering Terraform automation, AI-backed internal platforms, and cloud modernization.",
+    "Guru Subramaniam Shyamala, also known as Guru, is a Cloud Engineer and Forward Deployed Engineer specializing in Terraform, AWS, GCP, Azure, cloud modernization, and AI-backed internal platforms.",
   alternates: {
     canonical: "/"
   },
@@ -33,7 +33,9 @@ export const metadata: Metadata = {
     ...siteConfig.keywords,
     "portfolio",
     "cloud modernization",
-    "forward deployed engineer portfolio"
+    "forward deployed engineer portfolio",
+    "Guru cloud engineer portfolio",
+    "Guru Subramaniam Shyamala cloud engineer"
   ]
 };
 
@@ -41,10 +43,12 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: siteConfig.name,
+  alternateName: siteConfig.shortName,
   jobTitle: siteConfig.role,
   description: siteConfig.description,
   url: siteUrl,
   sameAs: [siteConfig.linkedinUrl, siteConfig.githubUrl],
+  keywords: siteConfig.keywords.join(", "),
   knowsAbout: [
     "Terraform",
     "AWS",
@@ -53,6 +57,16 @@ const personJsonLd = {
     "Forward Deployed Engineering",
     "AI platform engineering"
   ]
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteConfig.name,
+  alternateName: siteConfig.shortName,
+  url: siteUrl,
+  description: siteConfig.description,
+  inLanguage: "en-US"
 };
 
 const heroMetrics = [
@@ -78,6 +92,7 @@ export default function HomePage() {
   return (
     <div className={styles.page}>
       <StructuredData data={personJsonLd} />
+      <StructuredData data={websiteJsonLd} />
       <SiteHeader />
 
       <main className={styles.main}>
