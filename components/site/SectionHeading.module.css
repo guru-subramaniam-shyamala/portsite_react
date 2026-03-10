@@ -1,0 +1,30 @@
+.wrap {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 44rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+.description {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}

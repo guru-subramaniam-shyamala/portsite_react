@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Guru Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern personal portfolio built with Next.js App Router and TypeScript.
 
-## Available Scripts
+## Stack
 
-In the project directory, you can run:
+- Next.js 14
+- React 18
+- TypeScript
+- CSS Modules
 
-### `npm start`
+## Main Routes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `/` - editorial landing page with CTA, proof strip, services, experience snapshot, and featured case studies
+- `/projects/acb-platform`
+- `/projects/terraform-multi-cloud-migration`
+- `/projects/sharepoint-data-migration`
+- `/robots.txt`
+- `/sitemap.xml`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Local Development
 
-### `npm test`
+Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+Run the dev server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a production build:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+Start the production server locally:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## SEO Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Set `NEXT_PUBLIC_SITE_URL` to your deployed domain so canonical URLs, sitemap output, and metadata use the correct production base URL.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Example:
 
-## Learn More
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-domain.example
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Without that value, the app falls back to `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Content Model
 
-### Code Splitting
+Primary content lives in:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `content/site.ts`
+- `content/projects.ts`
+- `types/content.ts`
 
-### Analyzing the Bundle Size
+Update those files to change homepage messaging, services, case study content, or metadata without rewriting layout code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Notes
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The previous Create React App source has been preserved in `legacy-src/`.
+- The resume link currently points to the existing hosted PDF URL. Replace it with a first-party asset when you are ready.
+- Case study metrics are public-safe and sanitized. Replace them with exact values if you want stricter factual precision before launch.
